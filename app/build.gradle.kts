@@ -66,17 +66,24 @@ dependencies {
     implementation(project(Modules.coreUi))
 
     // Login module
-//    implementation(project(Modules.login_data))
-//    implementation(project(Modules.login_domain))
-//    implementation(project(Modules.login_presentation))
-//
-//    implementation(project(Modules.history_data))
-//    implementation(project(Modules.history_domain))
-//    implementation(project(Modules.history_presentation))
-//
-//    implementation(project(Modules.settings_data))
-//    implementation(project(Modules.settings_domain))
-//    implementation(project(Modules.settings_presentation))
+    implementation(project(Modules.login_data))
+    implementation(project(Modules.login_domain))
+    implementation(project(Modules.login_presentation))
+
+    implementation(project(Modules.history_data))
+    implementation(project(Modules.history_domain))
+    implementation(project(Modules.history_presentation))
+
+    implementation(project(Modules.settings_data))
+    implementation(project(Modules.settings_domain))
+    implementation(project(Modules.settings_presentation))
+
+    implementation(project(Modules.myqr_data))
+    implementation(project(Modules.myqr_domain))
+    implementation(project(Modules.myqr_presentation))
+
+    implementation(project(Modules.splashscreen_presentation))
+
 
     implementation(AndroidX.coreKtx)
     implementation(AndroidX.appCompat)

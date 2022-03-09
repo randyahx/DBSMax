@@ -15,4 +15,10 @@ object Modules {
     const val settings_data = ":settings:settings_data"
     const val settings_domain = ":settings:settings_domain"
     const val settings_presentation = ":settings:settings_presentation"
+
+    const val myqr_data = ":myqr:myqr_data"
+    const val myqr_domain = ":myqr:myqr_domain"
+    const val myqr_presentation = ":myqr:myqr_presentation"
+
+    const val splashscreen_presentation = ":splashscreen:splashscreen_presentation"
 }

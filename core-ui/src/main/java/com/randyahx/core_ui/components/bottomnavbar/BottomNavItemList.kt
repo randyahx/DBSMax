@@ -11,8 +11,8 @@ import com.randyahx.core_ui.Dimensions
 object BottomNavItemList {
     val items : List<BottomNavItem> = listOf(
         BottomNavItem(
-            name = "OTP",
-            route = "otp",
+            name = "My QR",
+            route = "myqr",
             icon = Icons.Default.Home
         ),
         BottomNavItem(

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
@@ -13,6 +14,24 @@
             <option value="$PROJECT_DIR$/buildSrc" />
             <option value="$PROJECT_DIR$/core" />
             <option value="$PROJECT_DIR$/core-ui" />
+            <option value="$PROJECT_DIR$/history" />
+            <option value="$PROJECT_DIR$/history/history_data" />
+            <option value="$PROJECT_DIR$/history/history_domain" />
+            <option value="$PROJECT_DIR$/history/history_presentation" />
+            <option value="$PROJECT_DIR$/login" />
+            <option value="$PROJECT_DIR$/login/login_data" />
+            <option value="$PROJECT_DIR$/login/login_domain" />
+            <option value="$PROJECT_DIR$/login/login_presentation" />
+            <option value="$PROJECT_DIR$/myqr" />
+            <option value="$PROJECT_DIR$/myqr/myqr_data" />
+            <option value="$PROJECT_DIR$/myqr/myqr_domain" />
+            <option value="$PROJECT_DIR$/myqr/myqr_presentation" />
+            <option value="$PROJECT_DIR$/settings" />
+            <option value="$PROJECT_DIR$/settings/settings_data" />
+            <option value="$PROJECT_DIR$/settings/settings_domain" />
+            <option value="$PROJECT_DIR$/settings/settings_presentation" />
+            <option value="$PROJECT_DIR$/splashscreen" />
+            <option value="$PROJECT_DIR$/splashscreen/splashscreen_presentation" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
