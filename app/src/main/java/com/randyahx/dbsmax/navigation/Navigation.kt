@@ -16,7 +16,7 @@ import com.randyahx.splashscreen_presentation.SplashscreenScreen
 fun Navigation(navController: NavHostController) {
     NavHost(
         navController = navController,
-        startDestination = Route.MYQR
+        startDestination = Route.LOGIN
     ) {
         composable(Route.SPLASHSCREEN) {
             SplashscreenScreen(

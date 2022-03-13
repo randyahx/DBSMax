@@ -19,9 +19,11 @@ import androidx.navigation.compose.rememberNavController
 import com.randyahx.core.navigation.Route
 import com.randyahx.core_ui.components.bottomnavbar.BottomNavBar
 import com.randyahx.core_ui.components.bottomnavbar.BottomNavItemList
+import com.randyahx.core_ui.theme.DBSMaxTheme
 import com.randyahx.dbsmax.navigation.Navigation
-import com.randyahx.dbsmax.ui.theme.DBSMaxTheme
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -34,26 +36,26 @@ class MainActivity : ComponentActivity() {
                 ) {
                     // Bottom Navbar
                     val navController = rememberNavController()
-                    val navBackStackEntry by navController.currentBackStackEntryAsState()
-                    
-                    val bottomBarVisible = rememberSaveable { mutableStateOf(true)}
+//                    val navBackStackEntry by navController.currentBackStackEntryAsState()
+//
+//                    val bottomBarVisible = rememberSaveable { mutableStateOf(true)}
+//
+//                    when(navBackStackEntry?.destination?.route) {
+//                        Route.SPLASHSCREEN -> {
+//                            bottomBarVisible.value = false
+//                        }
+//                        Route.LOGIN -> {
+//                            bottomBarVisible.value = false
+//                        }
+//                    }
 
-                    when(navBackStackEntry?.destination?.route) {
-                        Route.SPLASHSCREEN -> {
-                            bottomBarVisible.value = false
-                        }
-                        Route.LOGIN -> {
-                            bottomBarVisible.value = false
-                        }
-                    }
-
-                    Scaffold(
-                        bottomBar = {
-                            BottomNavBar(items = BottomNavItemList.items, visible = bottomBarVisible, navController = navController, onItemClick = { navController.navigate(it.route) })
-                        }
-                    ) {
+//                    Scaffold(
+//                        bottomBar = {
+//                            BottomNavBar(items = BottomNavItemList.items, visible = bottomBarVisible, navController = navController, onItemClick = { navController.navigate(it.route) })
+//                        }
+//                    ) {
                         Navigation(navController = navController)
-                    }
+//                    }
                 }
             }
         }
