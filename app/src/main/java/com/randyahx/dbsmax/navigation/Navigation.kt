@@ -7,7 +7,8 @@ import androidx.navigation.compose.composable
 import com.randyahx.core.navigation.Route
 import com.randyahx.dbsmax.R
 import com.randyahx.history_presentation.HistoryScreen
-import com.randyahx.login_presentation.LoginScreen
+import com.randyahx.login_presentation.LoginEmailScreen
+import com.randyahx.login_presentation.LoginOrgIdScreen
 import com.randyahx.myqr_presentation.MyQRScreen
 import com.randyahx.settings_presentation.SettingsScreen
 import com.randyahx.splashscreen_presentation.SplashscreenScreen
@@ -16,17 +17,20 @@ import com.randyahx.splashscreen_presentation.SplashscreenScreen
 fun Navigation(navController: NavHostController) {
     NavHost(
         navController = navController,
-        startDestination = Route.LOGIN
+        startDestination = Route.LOGINEMAIL
     ) {
         composable(Route.SPLASHSCREEN) {
             SplashscreenScreen(
                 navController = navController,
                 icon = R.drawable.dbsmaxlogo,
-                nextScreen = Route.LOGIN
+                nextScreen = Route.LOGINORGID
             )
         }
-        composable(Route.LOGIN) {
-            LoginScreen(navController = navController)
+        composable(Route.LOGINORGID) {
+            LoginOrgIdScreen(navController = navController)
+        }
+        composable(Route.LOGINEMAIL) {
+            LoginEmailScreen(navController = navController)
         }
         composable(Route.MYQR) {
             MyQRScreen(navController = navController)
