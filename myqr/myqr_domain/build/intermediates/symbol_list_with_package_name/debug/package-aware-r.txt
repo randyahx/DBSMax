@@ -1,0 +1,1 @@
+com.randyahx.myqr_domain
