@@ -4,15 +4,10 @@ object Modules {
     const val core = ":core"
     const val coreUi = ":core-ui"
 
-    const val login_data = ":login:login_data"
-    const val login_domain = ":login:login_domain"
-    const val login_presentation = ":login:login_presentation"
+    const val onboarding_domain = ":onboarding:onboarding_domain"
+    const val onboarding_presentation = ":onboarding:onboarding_presentation"
 
-    const val history_data = ":history:history_data"
-    const val history_domain = ":history:history_domain"
-    const val history_presentation = ":history:history_presentation"
-
-    const val settings_data = ":settings:settings_data"
-    const val settings_domain = ":settings:settings_domain"
-    const val settings_presentation = ":settings:settings_presentation"
+    const val tracking_data = ":tracking:tracking_data"
+    const val tracking_domain = ":tracking:tracking_domain"
+    const val tracking_presentation = ":tracking:tracking_presentation"
 }

@@ -1,4 +1,4 @@
-package com.randyahx.dbsmax.ui.theme
+package com.randyahx.core_ui.theme
 
 import androidx.compose.material.Typography
 import androidx.compose.ui.text.TextStyle
