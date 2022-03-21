@@ -1,14 +1,17 @@
 package com.randyahx.login_data.remote
 
+import com.randyahx.core.data.BasicApiResponse
+import com.randyahx.login_data.dto.LoginRequest
+import com.randyahx.login_data.dto.LoginResponse
 import com.randyahx.login_domain.model.JWT
 import retrofit2.http.*
 
 interface LoginApi {
     @FormUrlEncoded
-    @POST("login")
-    suspend fun loginEmail(@Field("username") username: String, @Field("password") password: String): JWT
+    @POST("/api/login")
+    suspend fun loginEmail(@Body loginRequest: LoginRequest): BasicApiResponse<LoginResponse>
 
     companion object {
-        const val BASE_URL = "http://localhost:9091/api/"
+        const val BASE_URL = "http://10.0.2.2:9101/"
     }
 }

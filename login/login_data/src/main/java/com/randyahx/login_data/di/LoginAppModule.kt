@@ -10,7 +10,7 @@ import dagger.hilt.components.SingletonComponent
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
-import retrofit2.converter.moshi.MoshiConverterFactory
+import retrofit2.converter.gson.GsonConverterFactory
 import javax.inject.Singleton
 
 @Module
@@ -30,10 +30,10 @@ class LoginAppModule {
 
     @Provides
     @Singleton
-    fun provideLoginApi(client: OkHttpClient): LoginApi {
+    fun provideLoginApi(): LoginApi {
         return Retrofit.Builder()
             .baseUrl(LoginApi.BASE_URL)
-            .addConverterFactory(MoshiConverterFactory.create())
+            .addConverterFactory(GsonConverterFactory.create())
             .build()
             .create(LoginApi::class.java)
     }

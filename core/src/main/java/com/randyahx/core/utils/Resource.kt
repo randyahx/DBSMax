@@ -1,4 +1,6 @@
-package com.randyahx.authenticator2fa.common
+package com.randyahx.core.utils
+
+typealias SimpleResource = Resource<Unit>
 
 sealed class Resource<T>(val data: T? = null, val message: String? = null) {
     class Success<T>(data: T) : Resource<T>(data)

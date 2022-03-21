@@ -1,7 +1,7 @@
 package com.randyahx.login_domain.repository
 
-import com.randyahx.login_domain.model.JWT
+import com.randyahx.core.utils.SimpleResource
 
 interface LoginRepository {
-    suspend fun loginEmail(username: String, password: String): JWT
+    suspend fun loginEmail(email: String, password: String): SimpleResource
 }
