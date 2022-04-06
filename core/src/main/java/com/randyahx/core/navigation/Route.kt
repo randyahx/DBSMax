@@ -5,4 +5,5 @@ object Route {
     const val OTP = "otp"
     const val HISTORY = "history"
     const val SETTINGS = "settings"
+    const val API_TESTING = "api_testing"
 }

@@ -6,12 +6,17 @@ import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
-import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
+import androidx.navigation.compose.NavHost
+import androidx.navigation.compose.composable
+import androidx.navigation.compose.rememberNavController
+import com.randyahx.core.navigation.Route
+import com.randyahx.dbsmax.api_testing.APITesting
 import com.randyahx.dbsmax.ui.theme.DBSMaxTheme
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -21,7 +26,15 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colors.background
                 ) {
-
+                    val navController = rememberNavController()
+                    NavHost(
+                        navController = navController,
+                        startDestination = Route.API_TESTING
+                    ) {
+                        composable(Route.API_TESTING) {
+                            APITesting(navController = navController)
+                        }
+                    }
                 }
             }
         }
